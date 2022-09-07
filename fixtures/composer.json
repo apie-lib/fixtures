@@ -1,0 +1,32 @@
+{
+  "name": "apie/fixtures",
+  "description": "Composer package of the apie library: fixtures",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pieter Jordaan",
+      "email": "pieter_jordaan@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Apie\\Fixtures\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "fakerphp/faker": "^1.19"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpspec/prophecy-phpunit": "^2.0"
+  },
+  "suggest": {
+    "apie/core": "The classes here do not work without",
+    "apie/common-value-objects": "Some classes here do not work without",
+    "apie/date-value-objects": "Some classes here do not work without"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
