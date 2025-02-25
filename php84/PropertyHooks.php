@@ -1,5 +1,6 @@
 <?php
-
+if (PHP_VERSION_ID >= 80400) {
+    eval('
 namespace Apie\Fixtures\Php84;
 
 class PropertyHooks
@@ -28,4 +29,5 @@ class PropertyHooks
     public function __construct(string $name) {
         $this->name = $name;
     }
+}');
 }
